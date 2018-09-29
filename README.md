@@ -15,7 +15,7 @@ func main() {
 			Div(Attrs{"style": "background-color: lightblue;"},
 				Text("Testing testing…"),
 				Hr(),
-				A(Attrs{"href": "location.href = 'https://github.com/asmundstavdahl/html_builder'"},
+				A(Attrs{"href": "https://github.com/asmundstavdahl/html_builder"},
 					Img(Attrs{"src": "https://avatars2.githubusercontent.com/u/1936058?s=40&v=4"})),
 				Br())))
 	output := topNode.Html(
@@ -32,7 +32,7 @@ func main() {
         <div style="background-color: lightblue;">
             Testing testing…
             <hr/>
-            <a href="location.href = 'https://github.com/asmundstavdahl/html_builder'">
+            <a href="https://github.com/asmundstavdahl/html_builder">
                 <img src="https://avatars2.githubusercontent.com/u/1936058?s=40&v=4"></img>
             </a>
             <br/>
@@ -40,4 +40,5 @@ func main() {
     </body>
 </html>
 */
+
 ```
